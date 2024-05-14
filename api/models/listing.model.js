@@ -24,19 +24,27 @@ const listingSchema = new mongoose.Schema(
         },
         model: {
             type: String,
-            required: true,
-        },
-        new: {
-            type: Boolean,
-            required: true,
+            required: false,
         },
         tuned: {
             type: Boolean,
             required: true,
         },
+        age: {
+            type: Number,
+            required: true,
+        },
+        wheels: {
+            type: Number,
+            required: true,
+        },
         type: {
             type: String,
             required: true,
+        },
+        parkingLock: {
+            type: Boolean,
+            required: true
         },
         offer: {
             type: Boolean,
